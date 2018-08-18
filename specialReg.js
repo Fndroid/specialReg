@@ -1,5 +1,5 @@
 module.exports = {
-    Netflix: /(?=USER-AGENT,Argo\*,|DOMAIN-SUFFIX,netflix.com,|DOMAIN-SUFFIX,netflix.net,|DOMAIN-SUFFIX,nflxext.com,|DOMAIN-SUFFIX,nflximg.com,|DOMAIN-SUFFIX,nflximg.net,|DOMAIN-SUFFIX,nflxvideo.net,)[^\n]+/g,
+    Netflix: /(?=USER-AGENT,Argo\*,|DOMAIN-SUFFIX,netflix.com,|DOMAIN-SUFFIX,netflix.net,|DOMAIN-SUFFIX,nflxext.com,|DOMAIN-SUFFIX,nflximg.com,|DOMAIN-SUFFIX,nflximg.net,|DOMAIN-SUFFIX,nflxvideo.net,|DOMAIN-KEYWORD,youtube,)[^\n]+/g,
     Spotify: /(?=PROCESS-NAME,Spotify,|DOMAIN-SUFFIX,spoti.fi,|DOMAIN-KEYWORD,spotify,)[^\n]+/g,
     YouTube: /(?=USER-AGENT,com.google.ios.youtube\*,|USER-AGENT,YouTube\*,|DOMAIN-SUFFIX,googlevideo.com,|DOMAIN-SUFFIX,youtube.com,)[^\n]+/g,
     MytvSUPER: /(?=DOMAIN-KEYWORD,nowtv100,|DOMAIN-KEYWORD,rthklive,|DOMAIN-SUFFIX,mytvsuper.com,|DOMAIN-SUFFIX,tvb.com,)[^\n]+/g,
